@@ -5,7 +5,7 @@ function submitMessage() {
   document.getElementById('messageList').appendChild(newItem);
 }
 function clearMessage() {
-  //stub
+  document.getElementById('newMessage').value = '';
 }
 
 
