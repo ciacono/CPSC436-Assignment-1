@@ -20,5 +20,6 @@ function makeList() {
 window.onload = makeList;
 
 function clearList() {
-  //stub
+  var list = document.getElementById('messageList');
+  list.innerHTML = '';
 }
