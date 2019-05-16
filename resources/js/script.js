@@ -10,7 +10,8 @@ function clearMessage() {
 
 
 function makeList() {
-  var array = ['Message 1', 'Message 2', 'Message 3'];
+  var data = '["Messages are awesome", "Dogs or cats?", "Fun lists!"]';
+  var array = JSON.parse(data);
   for (var i = 0; i < array.length; i++) {
     var message = document.createElement('li');
     message.innerHTML = array[i];
