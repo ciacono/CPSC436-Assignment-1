@@ -10,20 +10,21 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
     </div>
-    <h1>Message List</h1>
-        <div>
-          <input type="text" id="newMessage">
-          <br>
-          <br>
-          <button id="submitMessage" class="buttons" onclick=submitMessage()>Submit</button>
-          <button id="clearMessage" class="buttons" onclick=clearMessage()>Clear</button>
+    <div class="flex-container">
+        <div class="mainTitle">
+          <h1>Message List</h1>
         </div>
-        <br>
-        <br>
-        <h2>Messages:</h2>
-        <ul id="messageList">
-
-        </ul>
-        <button id="clearList" class="buttons" onclick=clearList()>Clear List</button>
+        <div id="formButtons">
+            <input type="text" id="newMessage" placeholder="Type your message here...">
+            <br>
+            <button id="submitMessage" class="buttons" onclick=submitMessage()>Submit</button>
+            <button id="clearMessage" class="buttons" onclick=clearMessage()>Clear</button>
+        </div>
+        <div id="messages">
+          <h2>Messages</h2>
+          <ul id="messageList"></ul>
+          <button id="clearList" class="buttons" onclick=clearList()>Clear List</button>
+        </div>
+      </div>
   </body>
 </html>

@@ -5,31 +5,85 @@ body {
 .navbar {
   background-color: #535B60;
   overflow: hidden;
+  display: flex;
+  width: 100%;
 }
 .navbar a {
   color: white;
-  text-align: center;
+  padding: 1%;
+}
+a:link {
+  text-decoration: none;
 }
 h1 {
   color: #535B60;
 }
 h2 {
-  color: #535B60;
-}
+  background-color: #535B60;
+  color:#C5D7D8;
+  padding: 1%;
+  margin: 0;
+  }
 p {
   color: #535B60;
 }
+input {
+  width: 100%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+ul {
+  color: #535B60;
+  background: #C5D7D8;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.1%;
+  box-sizing: border-box;
+  height: 300px;
+  overflow-y: scroll;
+  text-align: justify;
+}
+ul li {
+  background: #EDF2F2;
+  padding: 1%;
+  margin: 0.4%;
+}
 .buttons {
-  background-color: #89CFD6;
-  border: 2px solid #89CFD6;
+  background-color: #7CD3C6;
+  border: 2px solid #7CD3C6;
   color:#535B60;
   font-size: 16px;
-  display: inline-block;
+  display: inline-flex;
+  width: 50%;
   text-align: center;
-  padding: 12px 32px;
-  float: left;
+  padding: 1%;
+  float:  left;
+  box-sizing: border-box;
+}
+#clearList {
+  width: 100%;
 }
 .buttons:hover {
   background-color: #EDF2F2;
   color:#535B60;
 }
+.flex-container {
+  display:  flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-container > div {
+  align-items: center;
+  color: #535B60;
+  width: 40%;
+  text-align: center;
+}
+/* #mainTitle {
+
+}
+#formButtons {
+
+}
+#messages {
+
+} */

@@ -12,7 +12,7 @@ function clearMessage() {
 
 
 function makeList() {
-  var data = '["Messages are awesome", "Dogs or cats?", "Fun lists!"]';
+  var data = '["Messages are awesome.", "Dogs or cats?", "Fun lists!"]';
   var array = JSON.parse(data);
   for (var i = 0; i < array.length; i++) {
     var message = document.createElement('li');
