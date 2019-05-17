@@ -20,17 +20,21 @@ h1 {
 }
 h2 {
   background-color: #535B60;
-  color:#C5D7D8;
+  color:#EDF2F2;
   padding: 1%;
   margin: 0;
   }
 p {
   color: #535B60;
 }
-input {
+textarea {
   width: 100%;
-  padding: 1%;
+  font-size: 16px;
+  padding: 2%;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #535B60;
+  resize: none;
 }
 ul {
   color: #535B60;
@@ -47,6 +51,7 @@ ul li {
   background: #EDF2F2;
   padding: 1%;
   margin: 0.4%;
+  overflow-wrap: break-word;
 }
 .buttons {
   background-color: #7CD3C6;
@@ -57,7 +62,7 @@ ul li {
   width: 50%;
   text-align: center;
   padding: 1%;
-  float:  left;
+  float: left;
   box-sizing: border-box;
 }
 #clearList {
@@ -75,15 +80,17 @@ ul li {
 .flex-container > div {
   align-items: center;
   color: #535B60;
-  width: 40%;
+  width: 100%;
   text-align: center;
 }
-/* #mainTitle {
-
+/* .flex-child {
+  display:  flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
-#formButtons {
-
-}
-#messages {
-
+.flex-child > div {
+  color: #535B60;
+  width: 100%;
+  text-align: center;
 } */
