@@ -1,6 +1,7 @@
 body {
   background-color: #EDF2F2;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 .navbar {
   background-color: #535B60;
@@ -17,15 +18,18 @@ a:link {
 }
 h1 {
   color: #535B60;
+  text-align: center;
 }
 h2 {
   background-color: #535B60;
   color:#EDF2F2;
   padding: 1%;
   margin: 0;
+  text-align: center;
   }
 p {
   color: #535B60;
+  margin: 1%;
 }
 textarea {
   width: 100%;
@@ -54,13 +58,13 @@ ul li {
   overflow-wrap: break-word;
 }
 .buttons {
+  text-align: center;
   background-color: #7CD3C6;
   border: 2px solid #7CD3C6;
   color:#535B60;
   font-size: 16px;
   display: inline-flex;
   width: 50%;
-  text-align: center;
   padding: 1%;
   float: left;
   box-sizing: border-box;
@@ -83,14 +87,3 @@ ul li {
   width: 100%;
   text-align: center;
 }
-/* .flex-child {
-  display:  flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-}
-.flex-child > div {
-  color: #535B60;
-  width: 100%;
-  text-align: center;
-} */
