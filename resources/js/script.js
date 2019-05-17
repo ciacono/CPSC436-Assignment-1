@@ -1,8 +1,10 @@
 function submitMessage() {
   var message = document.getElementById('newMessage').value;
   var newItem = document.createElement('li');
-  newItem.innerHTML = message;
-  document.getElementById('messageList').appendChild(newItem);
+  if (message) {
+    newItem.innerHTML = message;
+    document.getElementById('messageList').appendChild(newItem);
+  }
 }
 function clearMessage() {
   document.getElementById('newMessage').value = '';

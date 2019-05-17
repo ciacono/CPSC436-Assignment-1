@@ -1,8 +1,9 @@
 body {
-  background-color: gray;
+  background-color: #EDF2F2;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .navbar {
-  background-color: black;
+  background-color: #535B60;
   overflow: hidden;
 }
 .navbar a {
@@ -10,11 +11,25 @@ body {
   text-align: center;
 }
 h1 {
-  color: blue;
+  color: #535B60;
 }
 h2 {
-  color: blue;
+  color: #535B60;
 }
 p {
-  color: black;
+  color: #535B60;
+}
+.buttons {
+  background-color: #89CFD6;
+  border: 2px solid #89CFD6;
+  color:#535B60;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  padding: 12px 32px;
+  float: left;
+}
+.buttons:hover {
+  background-color: #EDF2F2;
+  color:#535B60;
 }
