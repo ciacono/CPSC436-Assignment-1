@@ -5,12 +5,11 @@ function submitMessage() {
     newItem.innerHTML = message;
     document.getElementById('messageList').appendChild(newItem);
   }
+  clearMessage();
 }
 function clearMessage() {
   document.getElementById('newMessage').value = '';
 }
-
-
 function makeList() {
   var data = '["Messages are awesome.", "Dogs or cats?", "Fun lists!"]';
   var array = JSON.parse(data);
