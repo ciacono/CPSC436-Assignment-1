@@ -3,29 +3,33 @@
   <head>
     <title>Message List</title>
     <link rel="stylesheet" type="text/css" href="resources/css/style.css"/>
+    <script type="text/javascript" src="resources/js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <h1>Message List</h1>
-    <a href="about.html">About</a>
-      <br>
-      <br>
-      <div>
-        <div>
-          <form>
-            <input type="text" name="new-message">
-          </form>
-          <br>
-          <button>Submit</button>
-          <button>Clear</button>
+    <div id="navbar" class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="flex-container">
+        <div class="mainTitle">
+          <h1>Message List</h1>
         </div>
-        <h2>Messages:</h2>
-        <ul>
-          <li>Message 1</li>
-          <li>Message 2</li>
-          <li>Message 3</li>
-          <li>Message 4</li>
-        </ul>
-        <button>Clear List</button>
+        <div>
+          <div>
+            <textarea type="text" id="newMessage" maxlength="140"
+            wrap="hard" placeholder="Type your message here..."></textarea>
+          </div>
+          <div>
+              <button id="submitMessage" class="buttons" onclick=submitMessage()>Submit</button>
+              <button id="clearMessage" class="buttons" onclick=clearMessage()>Clear</button>
+          </div>
+        </div>
+        <div>
+          <h2>Messages</h2>
+          <ul id="messageList"></ul>
+          <button id="clearList" class="buttons" onclick=clearList()>Clear List</button>
+        </div>
       </div>
   </body>
 </html>
